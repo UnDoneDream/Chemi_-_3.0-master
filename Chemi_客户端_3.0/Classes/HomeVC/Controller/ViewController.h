@@ -13,5 +13,7 @@
 
 @property (strong, nonatomic) NSString *name;
 
+@property (strong, nonatomic) NSString *gaoyu;
+
 @end
 
