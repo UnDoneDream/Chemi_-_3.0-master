@@ -18,15 +18,7 @@
     [super viewDidLoad];
     
     
-    self.view.backgroundColor = [UIColor lightGrayColor];
-    
-    UIView *back = [[UIView alloc]init];
-    back.backgroundColor = [UIColor orangeColor];
-    back.x = 100;
-    back.y = 100;
-    back.width = 100;
-    back.height = 100;
-    [self.trysScrolls addSubview:back];
+    self.view.backgroundColor = [UIColor grayColor];
 }
 #pragma mark  ------------------- 返回导航栏标题
 - (NSString *)titles

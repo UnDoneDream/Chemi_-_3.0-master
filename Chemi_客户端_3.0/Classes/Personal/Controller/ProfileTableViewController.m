@@ -18,13 +18,7 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor lightGrayColor];
-    UIView *back = [[UIView alloc]init];
-    back.backgroundColor = [UIColor blueColor];
-    back.x = 100;
-    back.y = 100;
-    back.width = 100;
-    back.height = 100;
-    [self.trysScrolls addSubview:back];
+
     
 }
 #pragma mark  ------------------- 返回导航栏标题
