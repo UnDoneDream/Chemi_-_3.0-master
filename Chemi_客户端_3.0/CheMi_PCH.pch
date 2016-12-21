@@ -1,0 +1,77 @@
+//
+//  CheMi_PCH.pch
+//  Chemi_客户端_3.0
+//
+//  Created by ju on 16/10/10.
+//  Copyright © 2016年 ju. All rights reserved.
+//
+
+#ifndef CheMi_PCH_pch
+#define CheMi_PCH_pch
+
+#ifdef DEBUG
+#   define CNLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define CNLog( s, ... )
+#endif
+
+#define  iOS7 ([[UIDevice currentDevice].systemVersion doubleValue]>=7.0)
+
+//是否为iphone7Plus
+#define IS_IPHONE_7PLUS ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )736 ) < DBL_EPSILON )
+
+//是否为iphone7
+#define IS_IPHONE_7 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )736 ) < DBL_EPSILON )
+
+//是否为iphone4
+#define IS_IPHONE_4 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )480 ) < DBL_EPSILON )
+
+//是否为iphone5
+#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+
+//是否为iphone6
+#define IS_IPHONE_6 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )667 ) < DBL_EPSILON )
+
+//是否为iphone6Plus
+#define IS_IPHONE_6PLUS ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )736 ) < DBL_EPSILON )
+
+/**rgb···快捷键*/
+#define CNColor(r,g,b)[UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define normalFont ([UIFont systemFontOfSize:16])
+#define CNColora(r,g,b,a)[UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/1.0]
+
+#ifndef SYSTEM_FONT
+#define SYSTEM_FONT(__fontsize__)\
+[UIFont systemFontOfSize:__fontsize__]
+#endif
+
+#ifndef CNDefaultColor
+
+#define CNDefaultColor [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1/1.0]
+
+#endif
+
+#define CNUIEdgeA(a) UIEdgeInsetsMake(a, 0, 0, 0)
+#define CNUIEdgeB(b) UIEdgeInsetsMake(0, b, 0, 0)
+#define CNUIEdgeC(c) UIEdgeInsetsMake(0, 0, c, 0)
+#define CNUIEdgeD(d) UIEdgeInsetsMake(0, 0, 0, d)
+#define CNUIEdgeALL(a,b,c,d) UIEdgeInsetsMake(a, b, c, d)
+
+#define CNDefault_OTHER_COLORs(alphas) [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:(alphas)/1.0]
+
+#define CNTabButtonImageRotio 0.6
+#define CNTabNomalColor CNColor(130, 137, 153)
+#define CNTabSelectedColor CNColor(63, 175, 123)
+
+#ifndef IMAGE_NAMED
+#define IMAGE_NAMED(__imageName__)\
+[UIImage imageNamed:__imageName__]
+#endif
+
+
+#define CNScreenWidth [UIScreen mainScreen].bounds.size.width
+#define CNScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#import "Chemi_Header.h"
+
+#endif /* CheMi_PCH_pch */
