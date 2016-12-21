@@ -11,5 +11,7 @@
 @interface ViewController : BaseViewController
 
 
+@property (strong, nonatomic) NSString *name;
+
 @end
 
