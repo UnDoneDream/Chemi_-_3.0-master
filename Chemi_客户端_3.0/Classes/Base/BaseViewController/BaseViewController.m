@@ -12,11 +12,8 @@
 
 @property (strong,nonatomic) UIButton *leftBtn;
 @property (strong,nonatomic) UIButton *rightBtn;
-
 @property (strong,nonatomic) UIView *navBarView;
-
 @property (strong,nonatomic) UIView *backs;
-
 
 @end
 
