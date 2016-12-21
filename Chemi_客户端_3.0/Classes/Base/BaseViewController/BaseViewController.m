@@ -17,7 +17,6 @@
 
 @property (strong,nonatomic) UIView *backs;
 
-@property (strong,nonatomic) UIView *akjdsdbfjsbdjhfbsjhdbfjhsd;
 
 @end
 
