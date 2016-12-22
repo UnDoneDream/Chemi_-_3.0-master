@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		73AF3FCE1E0BBD2E00794D3B /* RootPersonalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AF3FCD1E0BBD2E00794D3B /* RootPersonalTableViewCell.m */; };
+		73AF3FD71E0BD68D00794D3B /* unLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AF3FD61E0BD68D00794D3B /* unLoginView.m */; };
+		73AF3FDA1E0BD69700794D3B /* LoginedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AF3FD91E0BD69700794D3B /* LoginedView.m */; };
 		8B9B51891DACEA1900596E2D /* XMConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9B51881DACEA1900596E2D /* XMConst.m */; };
 		8BF2A99A1DAB6017003E5A30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF2A9991DAB6017003E5A30 /* main.m */; };
 		8BF2A9A51DAB6017003E5A30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BF2A9A41DAB6017003E5A30 /* Assets.xcassets */; };
@@ -140,6 +142,10 @@
 		0E0D40FA21C0E9B8725BE64B /* Pods-Chemi_客户端_3.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chemi_客户端_3.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chemi_客户端_3.0/Pods-Chemi_客户端_3.0.debug.xcconfig"; sourceTree = "<group>"; };
 		73AF3FCC1E0BBD2E00794D3B /* RootPersonalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootPersonalTableViewCell.h; sourceTree = "<group>"; };
 		73AF3FCD1E0BBD2E00794D3B /* RootPersonalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootPersonalTableViewCell.m; sourceTree = "<group>"; };
+		73AF3FD51E0BD68D00794D3B /* unLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unLoginView.h; sourceTree = "<group>"; };
+		73AF3FD61E0BD68D00794D3B /* unLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = unLoginView.m; sourceTree = "<group>"; };
+		73AF3FD81E0BD69700794D3B /* LoginedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginedView.h; sourceTree = "<group>"; };
+		73AF3FD91E0BD69700794D3B /* LoginedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginedView.m; sourceTree = "<group>"; };
 		8B9B51871DACEA1900596E2D /* XMConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMConst.h; sourceTree = "<group>"; };
 		8B9B51881DACEA1900596E2D /* XMConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMConst.m; sourceTree = "<group>"; };
 		8BF2A9951DAB6017003E5A30 /* Chemi_客户端_3.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chemi_客户端_3.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -409,6 +415,10 @@
 			children = (
 				73AF3FCC1E0BBD2E00794D3B /* RootPersonalTableViewCell.h */,
 				73AF3FCD1E0BBD2E00794D3B /* RootPersonalTableViewCell.m */,
+				73AF3FD51E0BD68D00794D3B /* unLoginView.h */,
+				73AF3FD61E0BD68D00794D3B /* unLoginView.m */,
+				73AF3FD81E0BD69700794D3B /* LoginedView.h */,
+				73AF3FD91E0BD69700794D3B /* LoginedView.m */,
 			);
 			name = "一级Views";
 			sourceTree = "<group>";
@@ -1231,6 +1241,7 @@
 				9CF4367D1E090C08002147CF /* NSTimer+YYAdd.m in Sources */,
 				9CF436851E090C08002147CF /* UIDevice+YYAdd.m in Sources */,
 				9CF436B81E090C08002147CF /* YYGestureRecognizer.m in Sources */,
+				73AF3FD71E0BD68D00794D3B /* unLoginView.m in Sources */,
 				9CF436911E090C08002147CF /* YYMemoryCache.m in Sources */,
 				8BFBE3281DAB7E15004D00F8 /* BaseTabBarController.m in Sources */,
 				9CF436B01E090C08002147CF /* YYTextRubyAnnotation.m in Sources */,
@@ -1244,6 +1255,7 @@
 				8BFBE3521DAB9A10004D00F8 /* UIViewController+ReturnNavTitles.m in Sources */,
 				9CF4369D1E090C08002147CF /* YYWebImageManager.m in Sources */,
 				9CF436BB1E090C08002147CF /* YYSentinel.m in Sources */,
+				73AF3FDA1E0BD69700794D3B /* LoginedView.m in Sources */,
 				9CF436BE1E090C08002147CF /* YYTimer.m in Sources */,
 				9CF436B41E090C08002147CF /* YYTextView.m in Sources */,
 				8BFBE35F1DAC9A05004D00F8 /* UIButton+block.m in Sources */,
