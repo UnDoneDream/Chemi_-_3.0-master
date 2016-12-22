@@ -32,7 +32,7 @@
 
 - (void)setNavBar
 {
-    [self setRightItemTitle:@"设置" action:@selector(gotoSettingVC)];
+    [self setRightItemTitle:@"设置" titleColor:[UIColor whiteColor] action:@selector(gotoSettingVC)];
 }
 
 
