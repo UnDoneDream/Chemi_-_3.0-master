@@ -56,29 +56,21 @@ static NSString *const ID = @"cell";
 - (void)creatBtnLocationTitleView
 {
    
-    NSArray *list = @[@"捡到",@"丢失"];
-    for (int i = Zeros; i<list.count; i++) {
-        
-        self.selectBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        self.selectBtn.frame = CGRectMake(i*(self.segment.width/twos+ones)+ones, ones, self.segment.width/twos-threes, self.segment.height-twos);
-        self.selectBtn.tag = 100+i;
-        self.selectBtn.backgroundColor = CNColor(222, 222, 222);
-        [self.selectBtn setTitle:list[i] forState:UIControlStateNormal];
-        [self.selectBtn.titleLabel setFont:normalFont];
-        [self.selectBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-        [self.selectBtn setBackgroundImage:IMAGE_NAMED(@"main_normal") forState:UIControlStateNormal];
-         [self.selectBtn setBackgroundImage:IMAGE_NAMED(@"main_select") forState:UIControlStateSelected];
-        [self.selectBtn.layer setCornerRadius:corne];
-        [self.selectBtn.layer setBorderColor:CNColor(222, 222, 222).CGColor];
-        [self.selectBtn.layer setBorderWidth:2.0];
-        self.selectBtn.clipsToBounds = YES;
-        [self.selectBtn addTarget:self action:@selector(selectBtnMethod:) forControlEvents:UIControlEventTouchUpInside];
-        [self.segment addSubview:self.selectBtn];
-        
-    }
-     
-    [self setRightItemTitle:@"搜索" action:@selector(searchInfomation)];
+    //分段控制器
+    UISegmentedControl *segment = [[UISegmentedControl alloc]initWithItems:@[@"捡到",@"丢失"]];
+    segment.frame = CGRectMake(0, 0, 200, 30);
+    segment.tintColor = [UIColor whiteColor];
+    segment.selectedSegmentIndex = 0;
     
+    [segment setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont boldSystemFontOfSize:15],NSFontAttributeName,[UIColor whiteColor], NSForegroundColorAttributeName,nil] forState:UIControlStateNormal];
+    
+    [segment setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont boldSystemFontOfSize:15],NSFontAttributeName,[UIColor whiteColor], NSForegroundColorAttributeName,nil] forState:UIControlStateHighlighted];
+    
+    self.navigationItem.titleView = segment;
+    
+    [segment addTarget:self action:@selector(segmentChangePage:) forControlEvents:UIControlEventValueChanged];
+
+    [self setRightItemTitle:@"搜索" titleColor:[UIColor whiteColor] action:@selector(searchInfomation)];
     
     UIView *selectView = [[UIView alloc]initWithFrame:CGRectMake(Zeros, Zeros, CNScreenWidth, 50)];
     selectView.backgroundColor = [UIColor orangeColor];
@@ -99,12 +91,11 @@ static NSString *const ID = @"cell";
     CNLog(@"搜索");
     
 }
-- (void)selectBtnMethod:(UIButton *)sender
+- (void)segmentChangePage:(UISegmentedControl *)sender
 {
-    CNLog(@"%zd",sender.selected);
-    sender.selected = !sender.selected;
+  
     
-    if (sender.tag == 100) {
+    if (sender.selectedSegmentIndex == 0) {
         self.back_1.hidden = NO;
         self.back_2.hidden = YES;
         

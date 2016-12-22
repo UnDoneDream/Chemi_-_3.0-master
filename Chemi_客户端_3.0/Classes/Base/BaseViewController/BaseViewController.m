@@ -83,8 +83,8 @@
 #pragma mark --------------------- Settiing Nav Style -----------------------------
 - (void)setDefaultNavigationBar
 {
-    [self setNavigationBarBackgroundImage:[UIImage createImageWithColor:[UIColor whiteColor]]
-                                tintColor:[UIColor whiteColor]
+    [self setNavigationBarBackgroundImage:[UIImage createImageWithColor:CNColor(67,199,176)]
+                                tintColor:CNColor(67,199,176)
                                 textColor:CNDefaultColor
                            statusBarStyle:UIStatusBarStyleDefault];
 }
