@@ -66,15 +66,15 @@ static NSString *const ID = @"cell";
         [self.selectBtn setTitle:list[i] forState:UIControlStateNormal];
         [self.selectBtn.titleLabel setFont:normalFont];
         [self.selectBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-        [self.selectBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
         [self.selectBtn setBackgroundImage:IMAGE_NAMED(@"main_normal") forState:UIControlStateNormal];
          [self.selectBtn setBackgroundImage:IMAGE_NAMED(@"main_select") forState:UIControlStateSelected];
         [self.selectBtn.layer setCornerRadius:corne];
         [self.selectBtn.layer setBorderColor:CNColor(222, 222, 222).CGColor];
-        [self.selectBtn.layer setBorderWidth:1.0];
+        [self.selectBtn.layer setBorderWidth:2.0];
+        self.selectBtn.clipsToBounds = YES;
         [self.selectBtn addTarget:self action:@selector(selectBtnMethod:) forControlEvents:UIControlEventTouchUpInside];
         [self.segment addSubview:self.selectBtn];
-  
+        
     }
      
     [self setRightItemTitle:@"搜索" action:@selector(searchInfomation)];
@@ -101,6 +101,7 @@ static NSString *const ID = @"cell";
 }
 - (void)selectBtnMethod:(UIButton *)sender
 {
+    CNLog(@"%zd",sender.selected);
     sender.selected = !sender.selected;
     
     if (sender.tag == 100) {
@@ -114,9 +115,6 @@ static NSString *const ID = @"cell";
         self.back_2.hidden = NO;
       
     }
-    
-    
-    
     
 }
 
