@@ -67,7 +67,7 @@
 [UIImage imageNamed:__imageName__]
 #endif
 
-
+#define CNScreenBounds [UIScreen mainScreen].bounds
 #define CNScreenWidth [UIScreen mainScreen].bounds.size.width
 #define CNScreenHeight [UIScreen mainScreen].bounds.size.height
 

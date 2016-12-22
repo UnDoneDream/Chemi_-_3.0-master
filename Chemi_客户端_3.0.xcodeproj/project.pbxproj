@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73AF3FCE1E0BBD2E00794D3B /* RootPersonalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AF3FCD1E0BBD2E00794D3B /* RootPersonalTableViewCell.m */; };
 		8B9B51891DACEA1900596E2D /* XMConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9B51881DACEA1900596E2D /* XMConst.m */; };
 		8BF2A99A1DAB6017003E5A30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF2A9991DAB6017003E5A30 /* main.m */; };
 		8BF2A9A51DAB6017003E5A30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BF2A9A41DAB6017003E5A30 /* Assets.xcassets */; };
@@ -137,6 +138,8 @@
 /* Begin PBXFileReference section */
 		01C7194AB8A540D976335CAC /* Pods_Chemi_____3_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Chemi_____3_0.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E0D40FA21C0E9B8725BE64B /* Pods-Chemi_客户端_3.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chemi_客户端_3.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chemi_客户端_3.0/Pods-Chemi_客户端_3.0.debug.xcconfig"; sourceTree = "<group>"; };
+		73AF3FCC1E0BBD2E00794D3B /* RootPersonalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootPersonalTableViewCell.h; sourceTree = "<group>"; };
+		73AF3FCD1E0BBD2E00794D3B /* RootPersonalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootPersonalTableViewCell.m; sourceTree = "<group>"; };
 		8B9B51871DACEA1900596E2D /* XMConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMConst.h; sourceTree = "<group>"; };
 		8B9B51881DACEA1900596E2D /* XMConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMConst.m; sourceTree = "<group>"; };
 		8BF2A9951DAB6017003E5A30 /* Chemi_客户端_3.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chemi_客户端_3.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -401,6 +404,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		73AF3FCB1E0BBCFE00794D3B /* 一级Views */ = {
+			isa = PBXGroup;
+			children = (
+				73AF3FCC1E0BBD2E00794D3B /* RootPersonalTableViewCell.h */,
+				73AF3FCD1E0BBD2E00794D3B /* RootPersonalTableViewCell.m */,
+			);
+			name = "一级Views";
+			sourceTree = "<group>";
+		};
 		8BF2A98C1DAB6016003E5A30 = {
 			isa = PBXGroup;
 			children = (
@@ -596,6 +608,7 @@
 		8BF2A9E11DAB6FC0003E5A30 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				73AF3FCB1E0BBCFE00794D3B /* 一级Views */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1234,6 +1247,7 @@
 				9CF436BE1E090C08002147CF /* YYTimer.m in Sources */,
 				9CF436B41E090C08002147CF /* YYTextView.m in Sources */,
 				8BFBE35F1DAC9A05004D00F8 /* UIButton+block.m in Sources */,
+				73AF3FCE1E0BBD2E00794D3B /* RootPersonalTableViewCell.m in Sources */,
 				9CF4369C1E090C08002147CF /* YYSpriteSheetImage.m in Sources */,
 				8BF2A99A1DAB6017003E5A30 /* main.m in Sources */,
 				9CF4367E1E090C08002147CF /* CALayer+YYAdd.m in Sources */,

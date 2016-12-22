@@ -31,4 +31,8 @@
             #import "UIButton+block.h"
             #import "UINavigationBar+CoverView.h"
             #import "XMConst.h"
+
+#pragma mark ------- Thirds
+            #import <Masonry/Masonry.h>
+
 #endif /* Chemi_Header_h */
