@@ -62,7 +62,6 @@
 #define CNTabButtonImageRotio 0.6
 #define CNTabNomalColor CNColor(130, 137, 153)
 #define CNTabSelectedColor CNColor(63, 175, 123)
-
 #ifndef IMAGE_NAMED
 #define IMAGE_NAMED(__imageName__)\
 [UIImage imageNamed:__imageName__]
