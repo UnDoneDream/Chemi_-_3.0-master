@@ -35,22 +35,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    
-    
      self.navigationItem.title = self.titles;
      self.automaticallyAdjustsScrollViewInsets = NO;
-    
-//    if ([self.types isEqualToString:@"ones"] ) {
-        
-//          [self trysScrolls];
-//
-//    }else
-//    {
-//    
-//        [self.trysScrolls removeFromSuperview];
-//    }
-    
     
 }
 
@@ -305,28 +291,28 @@
 #pragma mark --------------------  UIScrollView Delegate Method -----------------------
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
-    if (self.titles) {
-        self.navigationItem.title = @"";
-    }
-    
-    CGFloat offsetY = scrollView.contentOffset.y;
-    CGFloat alphas;
-    if (offsetY > Zeros) {
-        CGFloat alpha = MIN(1, 1 - ((MainNavH - offsetY) / MainNavH));
-        alphas = alpha;
-        self.navBarView.backgroundColor = CNDefault_OTHER_COLORs(alpha);
-        if (offsetY >= MainNavH){
-            if (self.titles) {
-        self.navigationItem.titleView.hidden = NO;
-        self.navigationItem.titleView = [self returnNavTitlesAndTitles:self.titles andColor:CNDefaultColor];
-                
-            }
-        }
-    } else {
-        self.navigationItem.titleView.hidden = YES;
-        self.navigationItem.title = @"";
-        self.navBarView.backgroundColor = CNDefault_OTHER_COLORs(alphas);
-    }
+//    if (self.titles) {
+//        self.navigationItem.title = @"";
+//    }
+//    
+//    CGFloat offsetY = scrollView.contentOffset.y;
+//    CGFloat alphas;
+//    if (offsetY > Zeros) {
+//        CGFloat alpha = MIN(1, 1 - ((MainNavH - offsetY) / MainNavH));
+//        alphas = alpha;
+//        self.navBarView.backgroundColor = CNDefault_OTHER_COLORs(alpha);
+//        if (offsetY >= MainNavH){
+//            if (self.titles) {
+//        self.navigationItem.titleView.hidden = NO;
+//        self.navigationItem.titleView = [self returnNavTitlesAndTitles:self.titles andColor:CNDefaultColor];
+//                
+//            }
+//        }
+//    } else {
+//        self.navigationItem.titleView.hidden = YES;
+//        self.navigationItem.title = @"";
+//        self.navBarView.backgroundColor = CNDefault_OTHER_COLORs(alphas);
+//    }
 }
 
 #pragma mark -------------------- lazy load ----------------------------
