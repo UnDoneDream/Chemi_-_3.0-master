@@ -94,15 +94,9 @@
 - (void)setDefaultNavigationBar
 {
     [self setNavigationBarBackgroundImage:[UIImage createImageWithColor:CNColor(67,199,176)]
-<<<<<<< HEAD
                                 tintColor:CNColor(67,199,176)
                                 textColor:[UIColor whiteColor]
                            statusBarStyle:UIStatusBarStyleDefault];
-=======
-                                tintColor:[UIColor whiteColor]
-                                textColor:CNDefaultColor
-                           statusBarStyle:UIStatusBarStyleLightContent];
->>>>>>> origin/master
 }
 
 - (void)setNavigationBarBackgroundImage:(UIImage *)image
