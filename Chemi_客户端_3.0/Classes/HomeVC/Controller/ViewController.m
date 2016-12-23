@@ -72,7 +72,6 @@ static NSString *const ID = @"cell";
     
     [segment addTarget:self action:@selector(segmentChangePage:) forControlEvents:UIControlEventValueChanged];
 
-
     [self setRightImageNamed:@"main_search_white" action:@selector(searchInfomation)];
     
     UIView *selectView = [[UIView alloc]initWithFrame:CGRectMake(Zeros, Zeros, CNScreenWidth, 50)];

@@ -8,7 +8,7 @@ pod 'MJExtension'
 pod 'Masonry', '~> 1.0.0'
 pod 'Bugly', '~> 2.4.0'
 pod 'SVProgressHUD'
-#pod 'YYKit'
+pod 'MJRefresh'
 pod 'BaiduMobStat'
 pod 'IQKeyboardManager'
 end
