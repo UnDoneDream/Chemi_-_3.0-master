@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RootPersonalTableViewCell.h"
+#import "unLoginView.h"
+#import "LoginedView.h"
 
 @interface ProfileTableViewController : BaseViewController
 

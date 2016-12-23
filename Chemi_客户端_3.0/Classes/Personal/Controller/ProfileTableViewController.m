@@ -7,13 +7,18 @@
 //
 
 #import "ProfileTableViewController.h"
-#import "RootPersonalTableViewCell.h"
+
+
+#define tableHeaderViewHeight 200
+
 
 @interface ProfileTableViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *tableView;
 
 @property (strong, nonatomic) NSArray *tableData;
+
+@property (nonatomic,assign) BOOL isLogin;
 
 @end
 
@@ -22,7 +27,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.tableView];
+    self.isLogin = true;
     [self setNavBar];
+    [self setTableHeaderView];
 }
 #pragma mark  ------------------- 设置导航栏
 - (NSString *)titles
@@ -40,6 +47,18 @@
 - (void)gotoSettingVC
 {
     CNLog(@"设置");
+}
+
+#pragma mark ------------------- 内部调用方法部分
+- (void)setTableHeaderView
+{
+    if (self.isLogin) {
+        LoginedView *logined = [LoginedView LoginedViewWithFrame:CGRectMake(0, 0, CNScreenWidth, tableHeaderViewHeight) icon:[UIImage imageNamed:@"22131"] name:@"哈哈哈哈"];
+        self.tableView.tableHeaderView = logined;
+    }else{
+        unLoginView *unLogin = [unLoginView unLoginViewWithFrame:CGRectMake(0, 0, CNScreenWidth, tableHeaderViewHeight)];
+        self.tableView.tableHeaderView = unLogin;
+    }
 }
 
 #pragma mark  ------------------- UITableViewDataSource代理方法

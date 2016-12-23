@@ -10,4 +10,8 @@
 
 @interface LoginedView : UIView
 
++ (instancetype) LoginedViewWithFrame:(CGRect)frame icon:(UIImage *)icon name:(NSString *)name;
+
+- (instancetype) initWithFrame:(CGRect)frame icon:(UIImage *)icon name:(NSString *)name;
+
 @end

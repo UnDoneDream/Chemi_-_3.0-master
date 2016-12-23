@@ -31,6 +31,10 @@
             #import "UIButton+block.h"
             #import "UINavigationBar+CoverView.h"
             #import "XMConst.h"
+            #import "MJExtension.h"
+
+#pragma mark ------- HomeVC
+            #import "SearchVC.h"
 
 #pragma mark ------- Thirds
             #import <Masonry/Masonry.h>

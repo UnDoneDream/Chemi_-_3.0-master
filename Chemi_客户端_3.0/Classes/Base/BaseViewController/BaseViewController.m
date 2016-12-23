@@ -29,15 +29,25 @@
      self.navigationController.navigationBar.shadowImage = [UIImage new];
     
      [self setDefaultNavigationBar];
-     
+    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
      self.navigationItem.title = self.titles;
      self.automaticallyAdjustsScrollViewInsets = NO;
     
+    
+    
+}
+#pragma mark ------------------ push方法 ------------------
+- (void)pushVC:(UIViewController *)controller
+{
+
+    [self.navigationController pushViewController:controller animated:YES];
+
 }
 
 #pragma mark ------------------ 拦截push方法 ----------------------
@@ -79,14 +89,20 @@
 //    self.hidesBottomBarWhenPushed = YES;
 //    [self.navigationController pushViewController:controller animated:YES];
 }
-
+ 
 #pragma mark --------------------- Settiing Nav Style -----------------------------
 - (void)setDefaultNavigationBar
 {
     [self setNavigationBarBackgroundImage:[UIImage createImageWithColor:CNColor(67,199,176)]
+<<<<<<< HEAD
                                 tintColor:CNColor(67,199,176)
-                                textColor:CNDefaultColor
+                                textColor:[UIColor whiteColor]
                            statusBarStyle:UIStatusBarStyleDefault];
+=======
+                                tintColor:[UIColor whiteColor]
+                                textColor:CNDefaultColor
+                           statusBarStyle:UIStatusBarStyleLightContent];
+>>>>>>> origin/master
 }
 
 - (void)setNavigationBarBackgroundImage:(UIImage *)image
@@ -250,7 +266,7 @@
 
 - (void)setRightImageNamed:(NSString *)name action:(SEL)action {
     _rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    _rightBtn.backgroundColor = [UIColor yellowColor];
+    _rightBtn.backgroundColor = [UIColor clearColor];
     UIImage *image2=  [UIImage imageNamed:name];
     _rightBtn.frame =CGRectMake(Zeros, Zeros, NavBtnW, AllFifthH);
     _rightBtn.imageEdgeInsets = CNUIEdgeD(-10);

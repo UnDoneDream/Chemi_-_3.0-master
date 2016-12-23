@@ -10,4 +10,7 @@
 
 @interface unLoginView : UIView
 
+
++ (instancetype) unLoginViewWithFrame:(CGRect)frame;
+
 @end

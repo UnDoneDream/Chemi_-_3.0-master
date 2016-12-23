@@ -87,4 +87,7 @@
  */
 - (void)setupRightItems:(NSArray *)images;
 
+
+- (void)pushVC:(UIViewController *)controller;
+
 @end

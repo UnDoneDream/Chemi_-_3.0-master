@@ -31,6 +31,8 @@ static NSString *const ID = @"cell";
 #pragma mark --------------  数据存储部分
 @property (strong,nonatomic) NSMutableArray *saveDatas;
 
+
+@property (copy,nonatomic) NSString *onesss;
 @end
 
 @implementation ViewController
@@ -70,7 +72,7 @@ static NSString *const ID = @"cell";
     
     [segment addTarget:self action:@selector(segmentChangePage:) forControlEvents:UIControlEventValueChanged];
 
-    [self setRightItemTitle:@"搜索" titleColor:[UIColor whiteColor] action:@selector(searchInfomation)];
+    [self setRightImageNamed:@"main_search_white" action:@selector(searchInfomation)];
     
     UIView *selectView = [[UIView alloc]initWithFrame:CGRectMake(Zeros, Zeros, CNScreenWidth, 50)];
     selectView.backgroundColor = [UIColor orangeColor];
@@ -88,7 +90,8 @@ static NSString *const ID = @"cell";
 - (void)searchInfomation
 {
 
-    CNLog(@"搜索");
+    SearchVC *search = [SearchVC new];
+    [self pushVC:search];
     
 }
 - (void)segmentChangePage:(UISegmentedControl *)sender
