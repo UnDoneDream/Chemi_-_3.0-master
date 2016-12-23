@@ -79,7 +79,7 @@
 //    self.hidesBottomBarWhenPushed = YES;
 //    [self.navigationController pushViewController:controller animated:YES];
 }
-
+ 
 #pragma mark --------------------- Settiing Nav Style -----------------------------
 - (void)setDefaultNavigationBar
 {
@@ -250,7 +250,7 @@
 
 - (void)setRightImageNamed:(NSString *)name action:(SEL)action {
     _rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    _rightBtn.backgroundColor = [UIColor yellowColor];
+    _rightBtn.backgroundColor = [UIColor clearColor];
     UIImage *image2=  [UIImage imageNamed:name];
     _rightBtn.frame =CGRectMake(Zeros, Zeros, NavBtnW, AllFifthH);
     _rightBtn.imageEdgeInsets = CNUIEdgeD(-10);

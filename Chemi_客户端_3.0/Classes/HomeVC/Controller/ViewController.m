@@ -70,7 +70,8 @@ static NSString *const ID = @"cell";
     
     [segment addTarget:self action:@selector(segmentChangePage:) forControlEvents:UIControlEventValueChanged];
 
-    [self setRightItemTitle:@"搜索" titleColor:[UIColor whiteColor] action:@selector(searchInfomation)];
+
+    [self setRightImageNamed:@"main_search" action:@selector(searchInfomation)];
     
     UIView *selectView = [[UIView alloc]initWithFrame:CGRectMake(Zeros, Zeros, CNScreenWidth, 50)];
     selectView.backgroundColor = [UIColor orangeColor];
