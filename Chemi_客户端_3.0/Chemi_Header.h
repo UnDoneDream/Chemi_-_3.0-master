@@ -32,6 +32,9 @@
             #import "UINavigationBar+CoverView.h"
             #import "XMConst.h"
 
+#pragma mark ------- HomeVC
+            #import "SearchVC.h"
+
 #pragma mark ------- Thirds
             #import <Masonry/Masonry.h>
 

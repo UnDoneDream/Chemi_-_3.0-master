@@ -49,10 +49,10 @@
         
         //默认的返回按钮图片
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        [button setImage:[UIImage imageNamed:@"detail_nav_back_28x28_"] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:@"main_back"] forState:UIControlStateNormal];
         button.size = CGSizeMake(20, 30);
         button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-        button.contentEdgeInsets = UIEdgeInsetsMake(0, -8, 0, 0);
+        button.contentEdgeInsets = UIEdgeInsetsMake(0, -6, 0, 0);
         [button addTarget:self action:@selector(popBackLastController) forControlEvents:UIControlEventTouchUpInside];
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
 

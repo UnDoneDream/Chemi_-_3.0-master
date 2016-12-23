@@ -29,15 +29,25 @@
      self.navigationController.navigationBar.shadowImage = [UIImage new];
     
      [self setDefaultNavigationBar];
-     
+    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
      self.navigationItem.title = self.titles;
      self.automaticallyAdjustsScrollViewInsets = NO;
     
+    
+    
+}
+#pragma mark ------------------ push方法 ------------------
+- (void)pushVC:(UIViewController *)controller
+{
+
+    [self.navigationController pushViewController:controller animated:YES];
+
 }
 
 #pragma mark ------------------ 拦截push方法 ----------------------
@@ -84,9 +94,9 @@
 - (void)setDefaultNavigationBar
 {
     [self setNavigationBarBackgroundImage:[UIImage createImageWithColor:CNColor(67,199,176)]
-                                tintColor:CNColor(67,199,176)
+                                tintColor:[UIColor whiteColor]
                                 textColor:CNDefaultColor
-                           statusBarStyle:UIStatusBarStyleDefault];
+                           statusBarStyle:UIStatusBarStyleLightContent];
 }
 
 - (void)setNavigationBarBackgroundImage:(UIImage *)image

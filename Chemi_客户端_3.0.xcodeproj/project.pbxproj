@@ -35,6 +35,7 @@
 		8BFBE35B1DAC8E23004D00F8 /* twoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFBE35A1DAC8E23004D00F8 /* twoController.m */; };
 		8BFBE35F1DAC9A05004D00F8 /* UIButton+block.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFBE35E1DAC9A05004D00F8 /* UIButton+block.m */; };
 		8BFBE3631DACCA48004D00F8 /* UINavigationBar+CoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFBE3621DACCA48004D00F8 /* UINavigationBar+CoverView.m */; };
+		9C22F26E1E0CB724001B2AA3 /* SearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C22F26D1E0CB724001B2AA3 /* SearchVC.m */; };
 		9CF436701E090C08002147CF /* NSArray+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF435C31E090C08002147CF /* NSArray+YYAdd.m */; };
 		9CF436711E090C08002147CF /* NSBundle+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF435C51E090C08002147CF /* NSBundle+YYAdd.m */; };
 		9CF436721E090C08002147CF /* NSData+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF435C71E090C08002147CF /* NSData+YYAdd.m */; };
@@ -197,6 +198,8 @@
 		8BFBE35E1DAC9A05004D00F8 /* UIButton+block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+block.m"; sourceTree = "<group>"; };
 		8BFBE3611DACCA48004D00F8 /* UINavigationBar+CoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+CoverView.h"; sourceTree = "<group>"; };
 		8BFBE3621DACCA48004D00F8 /* UINavigationBar+CoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+CoverView.m"; sourceTree = "<group>"; };
+		9C22F26C1E0CB724001B2AA3 /* SearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchVC.h; sourceTree = "<group>"; };
+		9C22F26D1E0CB724001B2AA3 /* SearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchVC.m; sourceTree = "<group>"; };
 		9CF435C21E090C08002147CF /* NSArray+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YYAdd.h"; sourceTree = "<group>"; };
 		9CF435C31E090C08002147CF /* NSArray+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YYAdd.m"; sourceTree = "<group>"; };
 		9CF435C41E090C08002147CF /* NSBundle+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+YYAdd.h"; sourceTree = "<group>"; };
@@ -551,6 +554,8 @@
 				8BFBE3541DAC7429004D00F8 /* OneController.m */,
 				8BFBE3591DAC8E23004D00F8 /* twoController.h */,
 				8BFBE35A1DAC8E23004D00F8 /* twoController.m */,
+				9C22F26C1E0CB724001B2AA3 /* SearchVC.h */,
+				9C22F26D1E0CB724001B2AA3 /* SearchVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1264,6 +1269,7 @@
 				8BF2A99A1DAB6017003E5A30 /* main.m in Sources */,
 				9CF4367E1E090C08002147CF /* CALayer+YYAdd.m in Sources */,
 				9CF4368B1E090C08002147CF /* UITableView+YYAdd.m in Sources */,
+				9C22F26E1E0CB724001B2AA3 /* SearchVC.m in Sources */,
 				8BFBE3581DAC74CE004D00F8 /* BaseViewTwoController.m in Sources */,
 				8BF2A9E71DAB6FC0003E5A30 /* AppDelegate.m in Sources */,
 				9CF436751E090C08002147CF /* NSKeyedUnarchiver+YYAdd.m in Sources */,
