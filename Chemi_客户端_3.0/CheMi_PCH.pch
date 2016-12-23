@@ -47,7 +47,7 @@
 
 #ifndef CNDefaultColor
 
-#define CNDefaultColor [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1/1.0]
+#define CNDefaultColor [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1/1.0]
 
 #endif
 
