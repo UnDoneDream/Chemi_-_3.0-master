@@ -31,8 +31,6 @@ static NSString *const ID = @"cell";
 #pragma mark --------------  数据存储部分
 @property (strong,nonatomic) NSMutableArray *saveDatas;
 
-
-@property (copy,nonatomic) NSString *onesss;
 @end
 
 @implementation ViewController
@@ -111,8 +109,6 @@ static NSString *const ID = @"cell";
     }
     
 }
-
-
 #pragma mark  ------------------- 返回导航栏标题
 - (NSString *)titles
 {
