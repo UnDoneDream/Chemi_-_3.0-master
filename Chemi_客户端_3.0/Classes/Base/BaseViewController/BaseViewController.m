@@ -86,8 +86,8 @@
     
 }
 - (void)hideBottomBarPush:(BaseViewController *)controller {
-//    self.hidesBottomBarWhenPushed = YES;
-//    [self.navigationController pushViewController:controller animated:YES];
+    self.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:controller animated:YES];
 }
  
 #pragma mark --------------------- Settiing Nav Style -----------------------------

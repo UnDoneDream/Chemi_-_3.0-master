@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		738174191E0CF06D00FEC6DB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 738174181E0CF06D00FEC6DB /* LoginViewController.m */; };
+		7381741D1E0D12C700FEC6DB /* LoginBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7381741C1E0D12C700FEC6DB /* LoginBackView.m */; };
+		738174231E111AB400FEC6DB /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 738174221E111AB400FEC6DB /* RegisterViewController.m */; };
 		73AF3FCE1E0BBD2E00794D3B /* RootPersonalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AF3FCD1E0BBD2E00794D3B /* RootPersonalTableViewCell.m */; };
 		73AF3FD71E0BD68D00794D3B /* unLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AF3FD61E0BD68D00794D3B /* unLoginView.m */; };
 		73AF3FDA1E0BD69700794D3B /* LoginedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AF3FD91E0BD69700794D3B /* LoginedView.m */; };
@@ -141,6 +144,12 @@
 /* Begin PBXFileReference section */
 		01C7194AB8A540D976335CAC /* Pods_Chemi_____3_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Chemi_____3_0.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E0D40FA21C0E9B8725BE64B /* Pods-Chemi_客户端_3.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chemi_客户端_3.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chemi_客户端_3.0/Pods-Chemi_客户端_3.0.debug.xcconfig"; sourceTree = "<group>"; };
+		738174171E0CF06D00FEC6DB /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		738174181E0CF06D00FEC6DB /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		7381741B1E0D12C700FEC6DB /* LoginBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginBackView.h; sourceTree = "<group>"; };
+		7381741C1E0D12C700FEC6DB /* LoginBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginBackView.m; sourceTree = "<group>"; };
+		738174211E111AB400FEC6DB /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		738174221E111AB400FEC6DB /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		73AF3FCC1E0BBD2E00794D3B /* RootPersonalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootPersonalTableViewCell.h; sourceTree = "<group>"; };
 		73AF3FCD1E0BBD2E00794D3B /* RootPersonalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootPersonalTableViewCell.m; sourceTree = "<group>"; };
 		73AF3FD51E0BD68D00794D3B /* unLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unLoginView.h; sourceTree = "<group>"; };
@@ -413,6 +422,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7381741A1E0CF1B400FEC6DB /* loginViews */ = {
+			isa = PBXGroup;
+			children = (
+				7381741B1E0D12C700FEC6DB /* LoginBackView.h */,
+				7381741C1E0D12C700FEC6DB /* LoginBackView.m */,
+			);
+			name = loginViews;
+			sourceTree = "<group>";
+		};
 		73AF3FCB1E0BBCFE00794D3B /* 一级Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -609,6 +627,10 @@
 			children = (
 				8BF2A9FE1DAB7431003E5A30 /* ProfileTableViewController.h */,
 				8BF2A9FF1DAB7431003E5A30 /* ProfileTableViewController.m */,
+				738174171E0CF06D00FEC6DB /* LoginViewController.h */,
+				738174181E0CF06D00FEC6DB /* LoginViewController.m */,
+				738174211E111AB400FEC6DB /* RegisterViewController.h */,
+				738174221E111AB400FEC6DB /* RegisterViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -623,6 +645,7 @@
 		8BF2A9E11DAB6FC0003E5A30 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7381741A1E0CF1B400FEC6DB /* loginViews */,
 				73AF3FCB1E0BBCFE00794D3B /* 一级Views */,
 			);
 			path = View;
@@ -1257,7 +1280,9 @@
 				9CF436811E090C08002147CF /* UIBarButtonItem+YYAdd.m in Sources */,
 				9CF436AC1E090C08002147CF /* UIPasteboard+YYText.m in Sources */,
 				9CF436931E090C08002147CF /* CALayer+YYWebImage.m in Sources */,
+				738174191E0CF06D00FEC6DB /* LoginViewController.m in Sources */,
 				8BFBE3521DAB9A10004D00F8 /* UIViewController+ReturnNavTitles.m in Sources */,
+				738174231E111AB400FEC6DB /* RegisterViewController.m in Sources */,
 				9CF4369D1E090C08002147CF /* YYWebImageManager.m in Sources */,
 				9CF436BB1E090C08002147CF /* YYSentinel.m in Sources */,
 				73AF3FDA1E0BD69700794D3B /* LoginedView.m in Sources */,
@@ -1277,6 +1302,7 @@
 				9CF436A71E090C08002147CF /* YYTextLine.m in Sources */,
 				9CF436A61E090C08002147CF /* YYTextLayout.m in Sources */,
 				9CF436AB1E090C08002147CF /* NSParagraphStyle+YYText.m in Sources */,
+				7381741D1E0D12C700FEC6DB /* LoginBackView.m in Sources */,
 				9CF436781E090C08002147CF /* NSObject+YYAdd.m in Sources */,
 				9CF4368A1E090C08002147CF /* UIScrollView+YYAdd.m in Sources */,
 				9CF436A11E090C08002147CF /* YYTextContainerView.m in Sources */,

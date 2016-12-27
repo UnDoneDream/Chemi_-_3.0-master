@@ -8,9 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol unLoginViewDelegate <NSObject>
+
+- (void)unLoginViewDelegateToLoginVC;
+
+@end
+
 @interface unLoginView : UIView
 
+@property (weak, nonatomic) id<unLoginViewDelegate> unLoginDelegate;
 
 + (instancetype) unLoginViewWithFrame:(CGRect)frame;
+
 
 @end

@@ -12,7 +12,7 @@
 #define tableHeaderViewHeight 200
 
 
-@interface ProfileTableViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface ProfileTableViewController ()<UITableViewDelegate, UITableViewDataSource, unLoginViewDelegate>
 
 @property (strong, nonatomic) UITableView *tableView;
 
@@ -27,7 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.tableView];
-    self.isLogin = true;
+    self.isLogin = false;
     [self setNavBar];
     [self setTableHeaderView];
 }
@@ -57,6 +57,7 @@
         self.tableView.tableHeaderView = logined;
     }else{
         unLoginView *unLogin = [unLoginView unLoginViewWithFrame:CGRectMake(0, 0, CNScreenWidth, tableHeaderViewHeight)];
+        unLogin.unLoginDelegate = self;
         self.tableView.tableHeaderView = unLogin;
     }
 }
@@ -92,6 +93,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CNLog(@"点击了第%ld-%ld个cell",indexPath.section, indexPath.row);
+}
+
+#pragma mark  ------------------- 自定义代理方法实现
+- (void)unLoginViewDelegateToLoginVC
+{
+    LoginViewController *loginVC = [[LoginViewController alloc] init];
+    [self pushVC:loginVC];
 }
 
 

@@ -58,6 +58,9 @@
 - (void)gotoLoginVC
 {
     CNLog(@"立即登录");
+    if ([self.unLoginDelegate respondsToSelector:@selector(unLoginViewDelegateToLoginVC)]) {
+        [self.unLoginDelegate unLoginViewDelegateToLoginVC];
+    }
 }
 
 /*

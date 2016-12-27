@@ -130,7 +130,6 @@
     [self.contributeButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self).with.offset(74);
         make.top.equalTo(self.backView.mas_bottom).with.offset(10);
-//        make.width.mas_equalTo(@100);
         make.height.mas_equalTo(@34);
     }];
     
@@ -145,7 +144,7 @@
 
 - (void)loginedTwoBtnClick:(UIButton *)sender
 {
-    
+    CNLog(@"点击了tag为%ld的按钮",sender.tag);
 }
 
 

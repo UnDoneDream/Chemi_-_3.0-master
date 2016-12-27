@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LoginViewController.h"
+
 #import "RootPersonalTableViewCell.h"
 #import "unLoginView.h"
 #import "LoginedView.h"
