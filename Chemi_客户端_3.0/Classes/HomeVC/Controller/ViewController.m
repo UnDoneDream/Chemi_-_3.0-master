@@ -143,8 +143,9 @@ static NSString *const ID = @"cell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 
-
-    CNLog(@"选中第%zd行",indexPath.row);
+    ShowPersonCenter *pers = [[ShowPersonCenter alloc]init];
+    
+    [self pushVC:pers];
     
 }
 #pragma mark ------------------------UI lazy loading ----------------------

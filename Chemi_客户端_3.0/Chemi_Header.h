@@ -35,6 +35,7 @@
 
 #pragma mark ------- HomeVC
             #import "SearchVC.h"
+            #import "ShowPersonCenter.h"
 
 #pragma mark ------- Thirds
             #import <Masonry/Masonry.h>
