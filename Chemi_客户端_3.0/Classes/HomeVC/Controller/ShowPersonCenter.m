@@ -25,7 +25,7 @@ static NSString *const ID = @"cell";
     [super viewDidLoad];
 
     
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor orangeColor];
     
     [self setNavUI];
     
@@ -88,7 +88,7 @@ static NSString *const ID = @"cell";
         if (indexPath.row == 1) {
             
             cells.backgroundColor = [UIColor orangeColor];
-               return cells;
+            return cells;
         }else
         {
         
@@ -113,7 +113,8 @@ static NSString *const ID = @"cell";
         
     }else
     {
-        return nil;
+        // 如果是无的时候，那么显示无，cell的高度为两个cell的高度或者三个
+        return @"个人成就";
     }
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
@@ -124,9 +125,21 @@ static NSString *const ID = @"cell";
     }else
     {
     
-        return 10;
+        return 30;
     }
 
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    
+    if (section ==0 ) {
+        return 0.0001;
+    }else
+    {
+    
+        return 100;
+    }
+    
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -144,7 +157,37 @@ static NSString *const ID = @"cell";
         return 50;
     }
   
+}
 
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    UIView *footViews;
+    if (section == 1) {
+        
+        footViews = [[UIView alloc]initWithFrame:CGRectMake(0, 0, CNScreenWidth, 100)];
+        footViews.backgroundColor = [UIColor lightGrayColor];
+        UIButton *talks = [UIButton buttonWithType:UIButtonTypeCustom];
+        talks.backgroundColor = CNColor(67,199,176);
+        talks.showsTouchWhenHighlighted = YES;
+        [talks setTitle:@"与他真诚的沟通很重要，祝你好运😊😊~" forState:UIControlStateNormal];
+        [talks.layer setCornerRadius:9];
+        [talks.layer setBorderColor:[UIColor whiteColor].CGColor];
+        [talks.layer setBorderWidth:1.0];
+        [talks addTarget:self action:@selector(talkAboutsSomeOne) forControlEvents:UIControlEventTouchUpInside];
+        [footViews addSubview:talks];
+        [talks mas_makeConstraints:^(MASConstraintMaker *make) {
+            
+            make.left.mas_equalTo(footViews.mas_left).mas_offset(20);
+            make.right.mas_equalTo(footViews.mas_right).mas_offset(-20);
+            make.top.mas_equalTo(footViews.mas_top).mas_offset(20);
+            make.height.mas_equalTo(50);
+            
+        }];
+        
+        
+    }
+ 
+    return footViews;
 }
 
 
@@ -253,13 +296,16 @@ static NSString *const ID = @"cell";
             make.height.mas_equalTo(30);
         
         }];
-        
-        
-        
-        
-        
     }
     return _headerView;
+}
+#pragma mark -------------------------------- footer clicks method ----------------------------
+- (void)talkAboutsSomeOne
+{
+
+
+    CNLog(@"交流");
+    
 }
 - (void)iconMethod
 {
