@@ -304,7 +304,9 @@ static NSString *const ID = @"cell";
 {
 
 
-    CNLog(@"交流");
+    PersonChat *chat = [[PersonChat alloc]init];
+    
+    [self pushVC:chat];
     
 }
 - (void)iconMethod

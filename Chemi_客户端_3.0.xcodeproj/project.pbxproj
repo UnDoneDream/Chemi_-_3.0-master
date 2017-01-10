@@ -41,6 +41,7 @@
 		9C22F26E1E0CB724001B2AA3 /* SearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C22F26D1E0CB724001B2AA3 /* SearchVC.m */; };
 		9C3552581E162B0500EF80FB /* ReputationValueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3552571E162B0500EF80FB /* ReputationValueCell.m */; };
 		9C968C301E13B3BD00F6CDF6 /* ShowPersonCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C968C2F1E13B3BD00F6CDF6 /* ShowPersonCenter.m */; };
+		9CBA5E171E24784D0064D914 /* PersonChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA5E161E24784D0064D914 /* PersonChat.m */; };
 		9CF436701E090C08002147CF /* NSArray+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF435C31E090C08002147CF /* NSArray+YYAdd.m */; };
 		9CF436711E090C08002147CF /* NSBundle+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF435C51E090C08002147CF /* NSBundle+YYAdd.m */; };
 		9CF436721E090C08002147CF /* NSData+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF435C71E090C08002147CF /* NSData+YYAdd.m */; };
@@ -215,6 +216,8 @@
 		9C3552571E162B0500EF80FB /* ReputationValueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReputationValueCell.m; path = "Chemi_客户端_3.0/Classes/HomeVC/Controller/ReputationValueCell.m"; sourceTree = SOURCE_ROOT; };
 		9C968C2E1E13B3BD00F6CDF6 /* ShowPersonCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowPersonCenter.h; sourceTree = "<group>"; };
 		9C968C2F1E13B3BD00F6CDF6 /* ShowPersonCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowPersonCenter.m; sourceTree = "<group>"; };
+		9CBA5E151E24784D0064D914 /* PersonChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonChat.h; sourceTree = "<group>"; };
+		9CBA5E161E24784D0064D914 /* PersonChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonChat.m; sourceTree = "<group>"; };
 		9CF435C21E090C08002147CF /* NSArray+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YYAdd.h"; sourceTree = "<group>"; };
 		9CF435C31E090C08002147CF /* NSArray+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YYAdd.m"; sourceTree = "<group>"; };
 		9CF435C41E090C08002147CF /* NSBundle+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+YYAdd.h"; sourceTree = "<group>"; };
@@ -582,6 +585,8 @@
 				9C22F26D1E0CB724001B2AA3 /* SearchVC.m */,
 				9C968C2E1E13B3BD00F6CDF6 /* ShowPersonCenter.h */,
 				9C968C2F1E13B3BD00F6CDF6 /* ShowPersonCenter.m */,
+				9CBA5E151E24784D0064D914 /* PersonChat.h */,
+				9CBA5E161E24784D0064D914 /* PersonChat.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1358,6 +1363,7 @@
 				9CF436C01E090C08002147CF /* YYWeakProxy.m in Sources */,
 				9CF436731E090C08002147CF /* NSDate+YYAdd.m in Sources */,
 				9CF436B31E090C08002147CF /* YYLabel.m in Sources */,
+				9CBA5E171E24784D0064D914 /* PersonChat.m in Sources */,
 				9CF436891E090C08002147CF /* UIScreen+YYAdd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
