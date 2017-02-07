@@ -10,6 +10,10 @@
 		738174191E0CF06D00FEC6DB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 738174181E0CF06D00FEC6DB /* LoginViewController.m */; };
 		7381741D1E0D12C700FEC6DB /* LoginBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7381741C1E0D12C700FEC6DB /* LoginBackView.m */; };
 		738174231E111AB400FEC6DB /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 738174221E111AB400FEC6DB /* RegisterViewController.m */; };
+		73A683591E497162002AB757 /* CutImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A683561E497162002AB757 /* CutImageViewController.m */; };
+		73A6835A1E497162002AB757 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A683581E497162002AB757 /* SettingViewController.m */; };
+		73A683601E4971A2002AB757 /* CutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A6835D1E4971A2002AB757 /* CutView.m */; };
+		73A683611E4971A2002AB757 /* ImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A6835F1E4971A2002AB757 /* ImageTableViewCell.m */; };
 		73AF3FCE1E0BBD2E00794D3B /* RootPersonalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AF3FCD1E0BBD2E00794D3B /* RootPersonalTableViewCell.m */; };
 		73AF3FD71E0BD68D00794D3B /* unLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AF3FD61E0BD68D00794D3B /* unLoginView.m */; };
 		73AF3FDA1E0BD69700794D3B /* LoginedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AF3FD91E0BD69700794D3B /* LoginedView.m */; };
@@ -150,6 +154,14 @@
 		7381741C1E0D12C700FEC6DB /* LoginBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginBackView.m; sourceTree = "<group>"; };
 		738174211E111AB400FEC6DB /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		738174221E111AB400FEC6DB /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		73A683551E497162002AB757 /* CutImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CutImageViewController.h; sourceTree = "<group>"; };
+		73A683561E497162002AB757 /* CutImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CutImageViewController.m; sourceTree = "<group>"; };
+		73A683571E497162002AB757 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		73A683581E497162002AB757 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		73A6835C1E4971A2002AB757 /* CutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CutView.h; sourceTree = "<group>"; };
+		73A6835D1E4971A2002AB757 /* CutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CutView.m; sourceTree = "<group>"; };
+		73A6835E1E4971A2002AB757 /* ImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTableViewCell.h; sourceTree = "<group>"; };
+		73A6835F1E4971A2002AB757 /* ImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTableViewCell.m; sourceTree = "<group>"; };
 		73AF3FCC1E0BBD2E00794D3B /* RootPersonalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootPersonalTableViewCell.h; sourceTree = "<group>"; };
 		73AF3FCD1E0BBD2E00794D3B /* RootPersonalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootPersonalTableViewCell.m; sourceTree = "<group>"; };
 		73AF3FD51E0BD68D00794D3B /* unLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unLoginView.h; sourceTree = "<group>"; };
@@ -431,6 +443,28 @@
 			name = loginViews;
 			sourceTree = "<group>";
 		};
+		73A683541E497153002AB757 /* 设置 */ = {
+			isa = PBXGroup;
+			children = (
+				73A683551E497162002AB757 /* CutImageViewController.h */,
+				73A683561E497162002AB757 /* CutImageViewController.m */,
+				73A683571E497162002AB757 /* SettingViewController.h */,
+				73A683581E497162002AB757 /* SettingViewController.m */,
+			);
+			name = "设置";
+			sourceTree = "<group>";
+		};
+		73A6835B1E497190002AB757 /* 设置 */ = {
+			isa = PBXGroup;
+			children = (
+				73A6835C1E4971A2002AB757 /* CutView.h */,
+				73A6835D1E4971A2002AB757 /* CutView.m */,
+				73A6835E1E4971A2002AB757 /* ImageTableViewCell.h */,
+				73A6835F1E4971A2002AB757 /* ImageTableViewCell.m */,
+			);
+			name = "设置";
+			sourceTree = "<group>";
+		};
 		73AF3FCB1E0BBCFE00794D3B /* 一级Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -625,6 +659,7 @@
 		8BF2A9DF1DAB6FC0003E5A30 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				73A683541E497153002AB757 /* 设置 */,
 				8BF2A9FE1DAB7431003E5A30 /* ProfileTableViewController.h */,
 				8BF2A9FF1DAB7431003E5A30 /* ProfileTableViewController.m */,
 				738174171E0CF06D00FEC6DB /* LoginViewController.h */,
@@ -645,6 +680,7 @@
 		8BF2A9E11DAB6FC0003E5A30 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				73A6835B1E497190002AB757 /* 设置 */,
 				7381741A1E0CF1B400FEC6DB /* loginViews */,
 				73AF3FCB1E0BBCFE00794D3B /* 一级Views */,
 			);
@@ -1244,6 +1280,7 @@
 				9CF436841E090C08002147CF /* UIControl+YYAdd.m in Sources */,
 				9CF4367F1E090C08002147CF /* YYCGUtilities.m in Sources */,
 				9CF436A21E090C08002147CF /* YYTextDebugOption.m in Sources */,
+				73A683611E4971A2002AB757 /* ImageTableViewCell.m in Sources */,
 				9CF436721E090C08002147CF /* NSData+YYAdd.m in Sources */,
 				9CF436B21E090C08002147CF /* YYTextUtilities.m in Sources */,
 				9CF436A41E090C08002147CF /* YYTextInput.m in Sources */,
@@ -1273,6 +1310,7 @@
 				9CF436911E090C08002147CF /* YYMemoryCache.m in Sources */,
 				8BFBE3281DAB7E15004D00F8 /* BaseTabBarController.m in Sources */,
 				9CF436B01E090C08002147CF /* YYTextRubyAnnotation.m in Sources */,
+				73A6835A1E497162002AB757 /* SettingViewController.m in Sources */,
 				9CF4368E1E090C08002147CF /* YYCache.m in Sources */,
 				8BF2A9E61DAB6FC0003E5A30 /* ViewController.m in Sources */,
 				9CF436BF1E090C08002147CF /* YYTransaction.m in Sources */,
@@ -1296,6 +1334,7 @@
 				9CF4368B1E090C08002147CF /* UITableView+YYAdd.m in Sources */,
 				9C22F26E1E0CB724001B2AA3 /* SearchVC.m in Sources */,
 				8BFBE3581DAC74CE004D00F8 /* BaseViewTwoController.m in Sources */,
+				73A683601E4971A2002AB757 /* CutView.m in Sources */,
 				8BF2A9E71DAB6FC0003E5A30 /* AppDelegate.m in Sources */,
 				9CF436751E090C08002147CF /* NSKeyedUnarchiver+YYAdd.m in Sources */,
 				9CF436761E090C08002147CF /* NSNotificationCenter+YYAdd.m in Sources */,
@@ -1347,6 +1386,7 @@
 				9CF436731E090C08002147CF /* NSDate+YYAdd.m in Sources */,
 				9CF436B31E090C08002147CF /* YYLabel.m in Sources */,
 				9CF436891E090C08002147CF /* UIScreen+YYAdd.m in Sources */,
+				73A683591E497162002AB757 /* CutImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

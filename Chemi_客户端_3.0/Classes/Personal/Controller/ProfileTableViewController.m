@@ -7,6 +7,7 @@
 //
 
 #import "ProfileTableViewController.h"
+#import "SettingViewController.h"
 
 
 #define tableHeaderViewHeight 200
@@ -47,6 +48,8 @@
 - (void)gotoSettingVC
 {
     CNLog(@"设置");
+    SettingViewController *setting = [[SettingViewController alloc] init];
+    [self pushVC:setting];
 }
 
 #pragma mark ------------------- 内部调用方法部分
