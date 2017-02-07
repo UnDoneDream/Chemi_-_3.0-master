@@ -43,6 +43,9 @@
 		8BFBE35F1DAC9A05004D00F8 /* UIButton+block.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFBE35E1DAC9A05004D00F8 /* UIButton+block.m */; };
 		8BFBE3631DACCA48004D00F8 /* UINavigationBar+CoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFBE3621DACCA48004D00F8 /* UINavigationBar+CoverView.m */; };
 		9C22F26E1E0CB724001B2AA3 /* SearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C22F26D1E0CB724001B2AA3 /* SearchVC.m */; };
+		9C3552581E162B0500EF80FB /* ReputationValueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3552571E162B0500EF80FB /* ReputationValueCell.m */; };
+		9C968C301E13B3BD00F6CDF6 /* ShowPersonCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C968C2F1E13B3BD00F6CDF6 /* ShowPersonCenter.m */; };
+		9CBA5E171E24784D0064D914 /* PersonChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA5E161E24784D0064D914 /* PersonChat.m */; };
 		9CF436701E090C08002147CF /* NSArray+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF435C31E090C08002147CF /* NSArray+YYAdd.m */; };
 		9CF436711E090C08002147CF /* NSBundle+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF435C51E090C08002147CF /* NSBundle+YYAdd.m */; };
 		9CF436721E090C08002147CF /* NSData+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF435C71E090C08002147CF /* NSData+YYAdd.m */; };
@@ -221,6 +224,12 @@
 		8BFBE3621DACCA48004D00F8 /* UINavigationBar+CoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+CoverView.m"; sourceTree = "<group>"; };
 		9C22F26C1E0CB724001B2AA3 /* SearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchVC.h; sourceTree = "<group>"; };
 		9C22F26D1E0CB724001B2AA3 /* SearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchVC.m; sourceTree = "<group>"; };
+		9C3552561E162B0500EF80FB /* ReputationValueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReputationValueCell.h; path = "Chemi_客户端_3.0/Classes/HomeVC/Controller/ReputationValueCell.h"; sourceTree = SOURCE_ROOT; };
+		9C3552571E162B0500EF80FB /* ReputationValueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReputationValueCell.m; path = "Chemi_客户端_3.0/Classes/HomeVC/Controller/ReputationValueCell.m"; sourceTree = SOURCE_ROOT; };
+		9C968C2E1E13B3BD00F6CDF6 /* ShowPersonCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowPersonCenter.h; sourceTree = "<group>"; };
+		9C968C2F1E13B3BD00F6CDF6 /* ShowPersonCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowPersonCenter.m; sourceTree = "<group>"; };
+		9CBA5E151E24784D0064D914 /* PersonChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonChat.h; sourceTree = "<group>"; };
+		9CBA5E161E24784D0064D914 /* PersonChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonChat.m; sourceTree = "<group>"; };
 		9CF435C21E090C08002147CF /* NSArray+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YYAdd.h"; sourceTree = "<group>"; };
 		9CF435C31E090C08002147CF /* NSArray+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YYAdd.m"; sourceTree = "<group>"; };
 		9CF435C41E090C08002147CF /* NSBundle+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+YYAdd.h"; sourceTree = "<group>"; };
@@ -608,6 +617,10 @@
 				8BFBE35A1DAC8E23004D00F8 /* twoController.m */,
 				9C22F26C1E0CB724001B2AA3 /* SearchVC.h */,
 				9C22F26D1E0CB724001B2AA3 /* SearchVC.m */,
+				9C968C2E1E13B3BD00F6CDF6 /* ShowPersonCenter.h */,
+				9C968C2F1E13B3BD00F6CDF6 /* ShowPersonCenter.m */,
+				9CBA5E151E24784D0064D914 /* PersonChat.h */,
+				9CBA5E161E24784D0064D914 /* PersonChat.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -622,6 +635,8 @@
 		8BF2A9D91DAB6FC0003E5A30 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9C3552561E162B0500EF80FB /* ReputationValueCell.h */,
+				9C3552571E162B0500EF80FB /* ReputationValueCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1312,6 +1327,7 @@
 				9CF436B01E090C08002147CF /* YYTextRubyAnnotation.m in Sources */,
 				73A6835A1E497162002AB757 /* SettingViewController.m in Sources */,
 				9CF4368E1E090C08002147CF /* YYCache.m in Sources */,
+				9C968C301E13B3BD00F6CDF6 /* ShowPersonCenter.m in Sources */,
 				8BF2A9E61DAB6FC0003E5A30 /* ViewController.m in Sources */,
 				9CF436BF1E090C08002147CF /* YYTransaction.m in Sources */,
 				9CF436A51E090C08002147CF /* YYTextKeyboardManager.m in Sources */,
@@ -1338,6 +1354,7 @@
 				8BF2A9E71DAB6FC0003E5A30 /* AppDelegate.m in Sources */,
 				9CF436751E090C08002147CF /* NSKeyedUnarchiver+YYAdd.m in Sources */,
 				9CF436761E090C08002147CF /* NSNotificationCenter+YYAdd.m in Sources */,
+				9C3552581E162B0500EF80FB /* ReputationValueCell.m in Sources */,
 				9CF436A71E090C08002147CF /* YYTextLine.m in Sources */,
 				9CF436A61E090C08002147CF /* YYTextLayout.m in Sources */,
 				9CF436AB1E090C08002147CF /* NSParagraphStyle+YYText.m in Sources */,
@@ -1385,6 +1402,7 @@
 				9CF436C01E090C08002147CF /* YYWeakProxy.m in Sources */,
 				9CF436731E090C08002147CF /* NSDate+YYAdd.m in Sources */,
 				9CF436B31E090C08002147CF /* YYLabel.m in Sources */,
+				9CBA5E171E24784D0064D914 /* PersonChat.m in Sources */,
 				9CF436891E090C08002147CF /* UIScreen+YYAdd.m in Sources */,
 				73A683591E497162002AB757 /* CutImageViewController.m in Sources */,
 			);
